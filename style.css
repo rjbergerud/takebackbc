@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
   background: #EEEDEF;
 }
@@ -5,7 +11,12 @@ body {
 .story {
  padding-bottom: 70%;
  padding-top: 30%;
+ width: 90%;
+ max-width: 700px;
+ margin-left: auto;
+ margin-right: auto;
 }
+
 
 /**/
 
@@ -60,10 +71,20 @@ h1 {
   position: absolute;
   top: 5%;
   left: 50%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   max-width: 500px;
   background-color: rgba(255, 255, 255, 0.8);
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, -20%);
+}
+
+#arrow-fixed {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  opacity: 0.6;
 }
 
 .influence {
@@ -71,38 +92,36 @@ h1 {
 }
 
 #three-parties {
-  width: 100%;
+  width: 90%;
   position: relative;
-  padding-top: calc(20% + 700px);
+  padding-top: calc(20% + 580px);
   padding-left: 5%;
 }
 
-/*#container2 {
-  width: 100%;
-  padding-top: calc(30% + 30px);
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
 }
 
-
-
-.g-item {
-    position: relative;
-    margin: 0 auto;
-    max-width: 720px;
-    min-height: 90vh;
-    z-index: 2;
+@media (min-height: 600px) {
+  #arrow-fixed {
+    display: none;
+  }
 }
 
-.g-item .g-item-content-wrapper {
-    width: 100%;
-    padding-top: calc(70% + 30px);
+/*iPad*/
+@media (min-height: 1000px) {
+  .story {
+   padding-bottom: 40%;
+   padding-top: 20%;
+  }
 }
 
-div {
-    display: block;
+/*720p laptop screens*/
+@media (min-width: 800px) {
+  .story {
+   padding-bottom: 20%;
+   padding-top: 20%;
+  }
 }
-
-viewport-medium .g-label {
-    font-size: 21px;
-    max-width: 460px;
-}
-*/
