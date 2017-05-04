@@ -10,7 +10,7 @@
 
 <body>
     <!-- Default markup style -->
-    <div id="container">
+    <div id="container-intro">
         <div class="story content-wrapper" id="header">
             <h1>"Donations make the government stand up a listen, and anybody who pretends otherwise is not telling the truth."</h1>
             <a href="http://theprovince.com/opinion/dermod-travis-b-c-liberal-corporate-backers-win-a-lot-of-public-contracts">
@@ -25,20 +25,16 @@
             <h2><svg height="70" width="70"><circle r="8.5" class="green" transform="translate(35 61.5)"></svg>BC Greens riased <span class="green">$493,495</span></h2>
         </div>
     </div>
-    <div id="container2">
+    <div id="container-one-percent">
         <div class="story">
             <h3>Of this, the top 1% of donors donated <span class="influence">$7,316,211</span></h3>
         </div>
-        <div id="g-item-three" data-slug="three" class="story g-item  fade-in">
-            <div class="g-item-content-wrapper">
-                <div class="g-item-content">
-                    <p class="g-label">That is <strong>41%</strong> of donations</p>
-                </div>
-            </div>
+        <div class="story">
+          <h3 id="forty" class="fade-in">That is <span class="influence">41%</span> of donations</p>
         </div>
       </div>
 
-      <div id="access">
+      <div id="container-access">
         <h2>These donations buy access and influence</h2>
         <div id="story">
           <h3> BC's premier Christy Clark received $50,000 from the BC Liberal party for private fundraisers
@@ -140,10 +136,10 @@
                     $("#container").scrollStory({
 
                     });
-                      $("#container2").scrollStory({
+                      $("#container-one-percent").scrollStory({
                         itemfocus: function(ev, item) {
                             console.log(ev, item)
-                            $("#g-item-three").addClass("loaded");
+                            $("#forty").addClass("loaded");
                         }
                         });
                       });
