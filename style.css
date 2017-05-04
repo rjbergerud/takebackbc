@@ -1,0 +1,99 @@
+body {
+  background: #EEEDEF;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.liberal {
+  font-size: 2em;
+  color: #045ec1;
+  fill: #045ec1;
+}
+
+.ndp {
+  font-size: 2em;
+  color: #ff9800;
+  fill: #ff9800;
+}
+
+.green {
+  font-size: 2em;
+  color: #14a726;
+  fill: #14a726;
+}
+
+#header {
+  position: absolute;
+  top: 9.5%;
+  left: 50%;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -10%);
+}
+
+.influence {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#three-parties {
+  width: 100%;
+  position: relative;
+  padding-top: calc(70% + 300px);
+  left: 50%;
+  transform: translate(-25%, -10%);
+
+}
+
+#container2 {
+  width: 100%;
+  padding-top: calc(30% + 30px);
+}
+
+.story {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+     -moz-transition: opacity 2s ease-in;
+      -ms-transition: opacity 2s ease-in;
+       -o-transition: opacity 2s ease-in;
+          transition: opacity 2s ease-in;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+
+
+.g-item {
+    position: relative;
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 90vh;
+    z-index: 2;
+}
+
+.g-item .g-item-content-wrapper {
+    width: 100%;
+    padding-top: calc(70% + 30px);
+}
+
+div {
+    display: block;
+}
+
+viewport-medium .g-label {
+    font-size: 21px;
+    max-width: 460px;
+}
+
+.influence {
+  color: #C90E57;
+}
