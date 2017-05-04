@@ -98,6 +98,14 @@ h1 {
   padding-left: 5%;
 }
 
+.go-dark {
+  background-color: black;
+  -webkit-transition: background-color 1000ms linear;
+   -ms-transition: background-color 1000ms linear;
+   transition: background-color 1000ms linear;
+  color: white;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 1.5em;

@@ -138,13 +138,23 @@
                     $("#container").scrollStory({
 
                     });
-                      $("#container-one-percent").scrollStory({
-                        itemfocus: function(ev, item) {
-                            console.log(ev, item)
-                            $("#forty").addClass("loaded");
-                        }
-                        });
-                      });
+
+                    $("#container-one-percent").scrollStory({
+                      itemfocus: function(ev, item) {
+                          console.log(ev, item)
+                          $("#forty").addClass("loaded");
+                      }
+                    });
+
+                    $("#imperial").scrollStory({
+                      itemfocus: function(ev, item) {
+                          console.log(ev, item)
+                          $("#imperial").addClass("go-dark");
+                      }
+                    })
+            });
+
+
     </script>
 </body>
 
