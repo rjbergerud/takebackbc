@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700:400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1">
    </body>
@@ -187,12 +189,19 @@
       }
 
       function generate_99() {
+        var element = document.getElementsByClassName('influence'),
+            style = window.getComputedStyle(element[0]),
+            influenceColor = style.getPropertyValue('color');
         var donors = [];
         for(var i=0; i<99; i++) {
-          donors.push({class: "bottom-percent", size: 1, x: i*4%xDomain + 1, y: 5+Math.floor(i/(xDomain/noRows)), r: 1*radScale, colour: "#11111"});
+          var color = randomColor({
+            luminosity: 'dark',
+            hue: 'yellow'
+          });
+          donors.push({class: "bottom-percent", size: 1, x: i*4%xDomain + 1, y: 5+Math.floor(i/(xDomain/noRows)), r: 1*radScale, colour: color});
         }
         i=99
-        donors.push({class: "top-percent", size: 66, x: i*4%yDomain + 1, y: 5+Math.floor(i/(xDomain/noRows)), r: 1*radScale, colour: "#C90E57"});
+        donors.push({class: "top-percent", size: 66, x: i*4%xDomain + 1, y: 5+Math.floor(i/(xDomain/noRows)), r: 1*radScale, colour: influenceColor});
         return donors;
       }
 
@@ -205,7 +214,7 @@
           chart.attr("width", targetWidth);
           chart.attr("height", Math.min(Math.round(targetWidth / aspect), Math.round(window.innerHeight*0.6)));
           console.log("resize", chart.attr("width"), targetWidth, chart.attr("height"));
-          radScale = 3 + targetWidth/200;
+          radScale = 5 + targetWidth/150;
 
       }).trigger("resize");
 
@@ -213,8 +222,8 @@
       var data_1 = JSON.parse(JSON.stringify(data_99))
       data_1[99].r = 12.1*radScale;
 
-      var xScale = d3.scale.linear().range([0,width]).domain([0,100])
-      var yScale = d3.scale.linear().range([0,height]).domain([0,10])
+      var xScale = d3.scale.linear().range([0,width]).domain([0,xDomain])
+      var yScale = d3.scale.linear().range([0,height]).domain([0,yDomain])
 
       var update = function(value) {
         switch(value) {
@@ -243,7 +252,7 @@
             force.linkDistance((l) => {
       //         console.log(l)
               if(l.target.index === 99) {
-                return 80*radScale/5;
+                return 80*radScale/5 + 5;
               }
               if(l.source.index + 1 === l.target.index) {
                 return -1 + 8*radScale/4;
@@ -292,10 +301,11 @@
 
       $("#container-one-percent").scrollStory({
         itementerviewport: function(ev, item) {
-          if(item.index === 0 && run99 === false) {
+          if(item.index === 1 && run99 === false) {
             // item.el.css('background-color', 'red');
             update(1);
-          } else if (item.index === 1) {
+          }
+          if (item.index === 1) {
             $("#forty").addClass("loaded");
           }
         }

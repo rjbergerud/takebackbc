@@ -36,14 +36,18 @@ body {
   top: 20%;
   left: 2rem;
   z-index: 99;
-  margin: 10%;
-  width: 100%;
+  padding: 5%;
+  width: 95%;
 }
 
 #vis.fixed-vis {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 20%;
+  left: 0px;
+}
+
+#forty {
+  z-index: 100;
 }
 
 h1 {
@@ -126,8 +130,8 @@ h1 {
 /*iPad*/
 @media (min-height: 1000px) {
   .story {
-   padding-bottom: 40%;
-   padding-top: 20%;
+   padding-bottom: 25%;
+   padding-top: 25%;
   }
 
 
