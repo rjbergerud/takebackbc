@@ -220,15 +220,14 @@ $("#container").on('itemblur', function(ev, item){
               // });
 
               $("#imperial").scrollStory({
-                speed: 300,
-                triggerOffset: 300,
-                scrollOffset: -150,
-                itemfocus: function(ev, item) {
-                    console.log(ev, item)
+                containeractive: function() {
                     $("#imperial").addClass("go-dark");
                 },
                 itemfocus: function(ev, item) {
                   this.index(this.index())
-                }
+                },
+                speed: 300,
+                triggerOffset: 300,
+                scrollOffset: -150
               })
       });

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700');
 body {
   background: #EEEDEF;
 }
@@ -23,7 +24,16 @@ body {
     padding-bottom: calc(150px + 5%);
     padding-top: calc(150px + 5%);
     min-height: 100%;
+}
 
+#power-shift .story {
+  padding-bottom: 2em;
+  padding-top: 10%;
+  font-family: 'Cabin', sans-serif;
+}
+
+#power-shift p {
+  font-family: serif;
 }
 
 
@@ -79,23 +89,35 @@ h1 {
   fill: #14a726;
 }
 
-
+.white-box {
+  max-width: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*max-width: 500px;*/
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 #header {
   position: absolute;
-  top: 5%;
-  left: 50%;
-  height: 95%;
-  width: 95%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  max-width: 500px;
+  top: 10px;
+  width: auto;
+  right: 2.5%;
+  left: 2.5%;
+  max-width: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*max-width: 500px;*/
   background-color: rgba(255, 255, 255, 0.8);
-  transform: translate(-50%, -20%);
 }
 
 .quote {
   font-family: 'Libre Baskerville', serif;
+  margin-bottom: 1rem;
+}
+
+.quote-source {
+  text-align: right;
+  font-weight: 400;
 }
 
 #arrow-fixed {
@@ -169,5 +191,17 @@ h1 {
   .story {
    padding-bottom: 20%;
    padding-top: 20%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.7em;
   }
 }
