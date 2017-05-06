@@ -260,6 +260,7 @@ $("#container").on('itemblur', function(ev, item){
               // });
 
               $("#imperial").scrollStory({
+                scrollSensitivity: 400,
                 containeractive: function() {
                     $("#imperial").addClass("go-dark");
                 },
