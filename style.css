@@ -6,14 +6,18 @@
 
 /*@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700');*/
 body {
-    background: #EEDEDF;
+    background: #fff0f1;
 }
 
 
 body {
-  /*font-family: "CorporativeSans-Regular";*/
+  font-family: "Crimson", serif;
   overflow-x: hidden;
   color: #444; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
 
 h1 {
   /*font-family: "CorporativeSansAlt-Bold";*/
@@ -54,8 +58,35 @@ h5 {
   color: #444; }
 
 h6 {
-  /*font-family: "CorporativeSansAlt-Bold";*/
-  color: #017d8a; }
+  color: #017d8a;
+}
+
+a {
+  color: black;
+}
+
+a :hover {
+  color: blue;
+  transition: fade-in;
+}
+
+.go-dark a {
+  color: white;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+#dinner-party a {
+  color: white;
+}
+
+#kinder-morgan a {
+  color: white;
+}
 
 .story {
     position: relative;
