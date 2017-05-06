@@ -4,39 +4,27 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700');
+/*@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700');*/
 body {
-    background: #EEEDEF;
+    background: #fff0f1;
 }
 
-@font-face {
-    font-family: CorporativeSans-Black;
-    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Black.otf") format("opentype");
-}
-
-@font-face {
-    font-family: CorporativeSans-Regular;
-    font-weight: bold;
-    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: CorporativeSans-Bold;
-    font-weight: bold;
-    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Bold.otf") format("opentype");
-}
 
 body {
-  font-family: "CorporativeSans-Regular";
+  font-family: "Crimson", serif;
   overflow-x: hidden;
   color: #444; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
-  font-family: "CorporativeSansAlt-Bold";
+  /*font-family: "CorporativeSansAlt-Bold";*/
   }
 
 h2 {
-  font-family: "CorporativeSansAlt-Black";
+  /*font-family: "CorporativeSansAlt-Black";*/
 }
 
   h2.white {
@@ -45,15 +33,14 @@ h2 {
     color: #db4553; }
 
 h3 {
-  font-family: "CorporativeSansAlt-Black";
+  /*font-family: "CorporativeSansAlt-Black";*/
 }
   h3.white {
     color: #fff;
   }
 
 h4 {
-  font-family: "CorporativeSansAlt-Black";
-  text-transform: uppercase;
+  /*font-family: "CorporativeSansAlt-Black";*/
   color: #444; }
   h4.grey-lt {
     color: #9b9b9b; }
@@ -67,12 +54,39 @@ h4 {
     color: #00353b; }
 
 h5 {
-  font-family: "CorporativeSans-Medium";
+  /*font-family: "CorporativeSans-Medium";*/
   color: #444; }
 
 h6 {
-  font-family: "CorporativeSansAlt-Bold";
-  color: #017d8a; }
+  color: #017d8a;
+}
+
+a {
+  color: black;
+}
+
+a :hover {
+  color: blue;
+  transition: fade-in;
+}
+
+.go-dark a {
+  color: white;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+#dinner-party a {
+  color: white;
+}
+
+#kinder-morgan a {
+  color: white;
+}
 
 .story {
     position: relative;
@@ -82,6 +96,11 @@ h6 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.story.compact {
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 #imperial .story {
@@ -106,6 +125,10 @@ h6 {
 }
 
 #power-shift p {
+}
+
+.right {
+  text-align: right;
 }
 
 
@@ -142,6 +165,10 @@ h3 {
     position: relative;
 }
 
+#container-one-percent {
+  margin-bottom: 20%;
+}
+
 #container-one-percent h3 {
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -164,12 +191,17 @@ h3 {
     fill: #14a726;
 }
 
+#header .whitebox {
+  max-width: none;
+}
 .white-box {
-    max-width: none;
+    padding: 10px;
     padding-left: 5%;
     padding-right: 5%;
     /*max-width: 500px;*/
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1px;
+    margin-top: 10px;
 }
 
 #header {
@@ -183,6 +215,7 @@ h3 {
     padding-right: 5%;
     background-color: rgba(255,255,255,.8);
     padding-bottom: 50%;
+    max-height: 750px;
 }
 
 .quote {
@@ -261,6 +294,20 @@ h3 {
     color: white;
 }
 
+#info-gotv {
+  margin-top: 50px;
+  position: relative;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#block-logo {
+  position: absolute; background-color: white; width: 100%; height: 6%; bottom: 0px;
+}
+
+#sidenote {
+}
 @media (max-width: 500px) {
     h1 {
         font-size: 1.5em;
@@ -281,6 +328,11 @@ h3 {
         padding-bottom: 25%;
         padding-top: 25%;
     }
+    .story.compact {
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+
 }
 
 
@@ -291,6 +343,11 @@ h3 {
         padding-bottom: 20%;
         padding-top: 20%;
     }
+    .story.compact {
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+
     h1 {
         font-size: 3em;
     }
