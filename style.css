@@ -6,17 +6,82 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700');
 body {
-  background: #EEEDEF;
+    background: #EEEDEF;
 }
 
+@font-face {
+    font-family: CorporativeSans-Black;
+    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CorporativeSans-Regular;
+    font-weight: bold;
+    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CorporativeSans-Bold;
+    font-weight: bold;
+    src: url("Corporative Sans Complete Family/Latinotype - CorporativeSans-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: "CorporativeSans-Regular";
+  overflow-x: hidden;
+  color: #444; }
+
+h1 {
+  font-family: "CorporativeSansAlt-Bold";
+  }
+
+h2 {
+  font-family: "CorporativeSansAlt-Black";
+}
+
+  h2.white {
+    color: #fff; }
+  h2.red {
+    color: #db4553; }
+
+h3 {
+  font-family: "CorporativeSansAlt-Black";
+}
+  h3.white {
+    color: #fff;
+  }
+
+h4 {
+  font-family: "CorporativeSansAlt-Black";
+  text-transform: uppercase;
+  color: #444; }
+  h4.grey-lt {
+    color: #9b9b9b; }
+  h4.grey {
+    color: #8c8c8c; }
+  h4.blue {
+    color: #01b3c6; }
+  h4.blue-md {
+    color: #017d8a; }
+  h4.blue-dk {
+    color: #00353b; }
+
+h5 {
+  font-family: "CorporativeSans-Medium";
+  color: #444; }
+
+h6 {
+  font-family: "CorporativeSansAlt-Bold";
+  color: #017d8a; }
+
 .story {
- position: relative;
- padding-bottom: 70%;
- padding-top: 30%;
- width: 90%;
- max-width: 700px;
- margin-left: auto;
- margin-right: auto;
+    position: relative;
+    padding-bottom: 30%;
+    padding-top: 30%;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #imperial .story {
@@ -26,130 +91,162 @@ body {
     min-height: 100%;
 }
 
+#kinder-morgan {
+  background: url(Deepwater_Horizon_Oil_Spill_-_Gulf_of_Mexico.jpg);no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
 #power-shift .story {
-  padding-bottom: 2em;
-  padding-top: 10%;
-  font-family: 'Cabin', sans-serif;
+    padding-bottom: 2em;
+    padding-top: 10%;
 }
 
 #power-shift p {
-  font-family: serif;
 }
 
 
 /**/
 
 .fade-in.loaded {
-  opacity: 1;
+    opacity: 1;
 }
 
 .fade-in {
-  opacity: 0;
-  -webkit-transition: opacity 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition:         opacity 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    opacity: 0;
+    -webkit-transition: opacity 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: opacity 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 #vis {
-  position: fixed;
-  top: 20%;
-  left: 2rem;
-  z-index: 99;
-  padding: 5%;
-  width: 95%;
+    position: fixed;
+    top: 20%;
+    left: 2rem;
+    z-index: 0;
+    padding: 5%;
+    width: 95%;
+    overflow: visible;
 }
 
 #vis.fixed-vis {
-  position: absolute;
-  top: 20%;
-  left: 0px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
 }
 
-#forty {
-  z-index: 100;
+h3 {
+    z-index: 100;
+    position: relative;
 }
 
-h1 {
+#container-one-percent h3 {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .liberal {
-  font-size: 2em;
-  color: #045ec1;
-  fill: #045ec1;
+    font-size: 2em;
+    color: #045ec1;
+    fill: #045ec1;
 }
 
 .ndp {
-  font-size: 2em;
-  color: #ff9800;
-  fill: #ff9800;
+    font-size: 2em;
+    color: #ff9800;
+    fill: #ff9800;
 }
 
 .green {
-  font-size: 2em;
-  color: #14a726;
-  fill: #14a726;
+    font-size: 2em;
+    color: #14a726;
+    fill: #14a726;
 }
 
 .white-box {
-  max-width: none;
-  padding-left: 5%;
-  padding-right: 5%;
-  /*max-width: 500px;*/
-  background-color: rgba(255, 255, 255, 0.8);
+    max-width: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    /*max-width: 500px;*/
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #header {
-  position: absolute;
-  top: 10px;
-  width: auto;
-  right: 2.5%;
-  left: 2.5%;
-  max-width: none;
-  padding-left: 5%;
-  padding-right: 5%;
-  /*max-width: 500px;*/
-  background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 10px;
+    width: auto;
+    right: 2.5%;
+    left: 2.5%;
+    max-width: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255,255,255,.8);
+    padding-bottom: 50%;
 }
 
 .quote {
-  font-family: 'Libre Baskerville', serif;
-  margin-bottom: 1rem;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 1rem;
 }
 
 .quote-source {
-  text-align: right;
-  font-weight: 400;
+    text-align: right;
+    font-weight: 400;
 }
 
 #arrow-fixed {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  opacity: 0.6;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    opacity: 0.6;
 }
 
 .influence {
-  color:#da0000;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.2em;
+    color: #da0000;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+
 }
 
 #three-parties {
-  width: 90%;
-  position: relative;
-  padding-top: calc(20% + 580px);
-  padding-left: 5%;
+    width: 90%;
+    position: relative;
+    padding-top: calc(20% + 580px);
+    padding-left: 5%;
+}
+
+#dinner-party {
+  padding: 10%;
+  max-width: none;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(clark_dinner.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+#container-access {
+
 }
 
 #mtpol {
-  margin-left: -10%;
-  width: 115%;
-  background-color: rgba(226, 8, 8, 0.41);
-  margin-right: -10%;
-  margin-bottom: 1em;
+    margin-left: -10%;
+    width: 115%;
+    background-color: rgba(226, 8, 8, 0.41);
+    margin-right: -10%;
+    margin-bottom: 1em;
 }
 
 .caption {
-  margin-top: -0.9rem;
+    margin-top: -0.9rem;
     margin-right: 0.1rem;
     text-align: right;
     font-size: 0.6rem;
@@ -157,51 +254,50 @@ h1 {
 }
 
 .go-dark {
-  background-color: black;
-  -webkit-transition: background-color 1000ms linear;
-   -ms-transition: background-color 1000ms linear;
-   transition: background-color 1000ms linear;
-  color: white;
+    background-color: black;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    color: white;
 }
 
 @media (max-width: 500px) {
-  h1 {
-    font-size: 1.5em;
-  }
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
 @media (min-height: 600px) {
-  #arrow-fixed {
-    display: none;
-  }
+    #arrow-fixed {
+        display: none;
+    }
 }
+
 
 /*iPad*/
+
 @media (min-height: 1000px) {
-  .story {
-   padding-bottom: 25%;
-   padding-top: 25%;
-  }
-
-
+    .story {
+        padding-bottom: 25%;
+        padding-top: 25%;
+    }
 }
 
+
 /*720p laptop screens*/
+
 @media (min-width: 800px) {
-  .story {
-   padding-bottom: 20%;
-   padding-top: 20%;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 1.7em;
-  }
+    .story {
+        padding-bottom: 20%;
+        padding-top: 20%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.7em;
+    }
 }
