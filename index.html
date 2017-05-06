@@ -5,7 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700:400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700|Chelsea+Market" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700|Chelsea+Market" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1">
    </body>
@@ -23,9 +24,9 @@
         </div>
         <div class="story" id="three-parties" data-lib-total="12,275,290">
             In 2016,
-            <h2><svg height="70" width="70"><circle r="30" class="liberal" transform="translate(35 40)"></svg> BC Liberals raised <span class="liberal">$12,275,290 </span></h2>
-            <h2><svg height="70" width="70"><circle r="20.2" class="ndp" transform="translate(35 49.8)"></svg> BC NDP raised <span class="ndp">$4,786,494</span></h2>
-            <h2><svg height="70" width="70"><circle r="8.5" class="green" transform="translate(35 61.5)"></svg>BC Greens raised <span class="green">$493,495</span></h2>
+            <h2><svg height="70" width="70"><circle r="30" class="liberal" transform="translate(35 40)"></svg> BC Liberals raised </h2><h2 class="right"><span class="liberal right">$12,275,290 </span></h2>
+            <h2><svg height="70" width="70"><circle r="20.2" class="ndp" transform="translate(35 49.8)"></svg> BC NDP raised </h2><h2 class="right"><span class="ndp right">$4,786,494</span></h2>
+            <h2><svg height="70" width="70"><circle r="8.5" class="green" transform="translate(35 61.5)"></svg>BC Greens raised </h2><h2 class="right"><span class="green">$493,495</span></h2>
         </div>
         <i class="fa fa-long-arrow-down" id="arrow-fixed" aria-hidden="true"></i>
     </div>
@@ -47,14 +48,17 @@
             where big donors could share a table with Clark.</h3>
           <h3>Sound like a conflict of interest?</h3>
         </div>
-        <div class="story">
-          <p>BC's conflict of interest commissioner didn't think so, but</p>
+        <div class="story compact">
+          <h4>BC's conflict of interest commissioner didn't think so, but</h4>
           <h3>his son is a deputy minister in Clark's Cabinet</h3>
           <h4>and used to work for her former husband's PR firm, where <a href="https://www.desmog.ca/2014/07/24/former-enbridge-lobbyist-john-paul-fraser-named-new-head-b-c-government-communications-branch">he lobbied for pipelines</a></h4>
+
         </div>
-        <div class="story">
-          <h3> "The Liberals defend this world-class conflict of interest (...)"</h3>
-          <h4 href="http://www.theglobeandmail.com/opinion/editorials/bcs-wild-west-financing-laws-need-more-than-just-a-few-tweaks/article34259523/">-Globe and Mail</h4>
+        <div class="story compact">
+          <div class="white-box">
+            <h3 class="quote"> "British Columbia: The ‘Wild West’ of Canadian Political Cash"</h3>
+            <h4 class="quote-source"><a href="https://www.nytimes.com/2017/01/13/world/canada/british-columbia-christy-clark.html">-New York Times</a></h4>
+          </div>
         </div>
       </div>
 
@@ -89,47 +93,53 @@
         </div>
 
       <div id="contracts">
-        <div class="story white-box">
-        <h3 class="quote">
-          "Giving money to political parties is just another way of communicating with government."
-        </h3>
-        <h5 class="quote-source">
-        - Jonathan Moser, <a href="http://www.nationalobserver.com/2017/04/25/news/bc-road-builder-says-money-improves-communication-governments"> spokesman for Lafarge Canada. Donated $27,942 to BC political parties between 2013 and 2016.</a>
-      </h5>
+        <div class="story compact">
+          <div class="white-box">
+            <h3 class="quote">
+              "Giving money to political parties is just another way of communicating with government."
+            </h3>
+            <h4 class="quote-source">
+            - Jonathan Moser, <a href="http://www.nationalobserver.com/2017/04/25/news/bc-road-builder-says-money-improves-communication-governments"> spokesman for Lafarge Canada.</a> <a href="https://public.tableau.com/profile/wilfredo.contreras#!/vizhome/PoliticalContributionsinBC/Story">Donated $48,194 to BC political parties between 2005 and 2016.</a>
+          </h5>
+        </div>
       </div>
     </div>
 
 
-      <div id="power-shift">
-        <div class="story">
+      <div id="power-shift" class="story">
         <h2> WE CAN CHANGE THIS </h2>
 
-        <p> This is a close race. </p>
+        <h3> This is a close race. </h3>
         <h3>Which parties promise to ban corporate and union donations</h3>
         <ul>
           <li>BC NDP - yes</li>
           <li>BC Greens - yes</li>
           <li>BC Liberals - no</li>
         </ul>
+        <div id="info-gotv">
+          <img style="width: 100%" src="gotv-poster-mobile.png"></img>
+          <div id="block-logo"></div>
+        </div>
+        <div class="story">
+
         <div id="gotv">
-        <h1> GO VOTE </h1>
-        <h2> Here's how </h3>
-          <!-- How to vote -->
+        <h4>Links: </h4>
           <p>
-            If you haven't figured things out by election day, you can still vote.
-            Show up at any polling station
-              with one piece of photo government ID
-                with your address.
-              If you don't have that, you can have a friend that lives in your same electoral district <a href="http://elections.bc.ca/2017-general-election/voter-id/vouching/"> vouch for you</a>.
-            To see what other ID options you can use, check out <a href="http://elections.bc.ca/2017-general-election/voter-id/">Elections BC</a>.
+            <a href="http://elections.bc.ca/2017-general-election/voter-id/vouching/"> Vouching</a>.
+            <a href="http://elections.bc.ca/2017-general-election/voter-id/">Voter id</a>.
           </p>
+          <div id="sidenote">
+            <p>
+              To explore more of the data yourself, checkout out <a href="http://bigmoney.dogwoodbc.ca/explore-contributions/">bigmoney.dogwoodbc.ca/explore-contributions/</a>
+              <br />
+              Comments?  Feedback?  Tweet me @rjbergerud, or make a pull request on <a href="https://github.com/takebackbc/takebackbc.github.io/">github</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-      <div id="sidenote">
-        To explore more of the data yourself, checkout out <a href="http://bigmoney.dogwoodbc.ca/explore-contributions/">bigmoney.dogwoodbc.ca/explore-contributions/</a>
-      </div>
+
 
 
     <!-- include jquery and scrollstory -->

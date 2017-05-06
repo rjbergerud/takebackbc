@@ -132,14 +132,14 @@ var update = function(value) {
         if (node.target === 99)  {
           return -80;
         }
-        return -100;
+        return -130;
       });
       animationStep = 20;
          data_1[99].r = 66;
 
       var circles = svg.selectAll('circle').data(data_1)
 
-      svg.select('circle.top-percent').attr("r", 12.1*radScale + "")
+      svg.select('circle.top-percent').attr("r", 10.1*radScale + "")
       force.on('tick', function() {
          circles.transition().ease('linear').duration(animationStep)
         .attr('cx', function(d) { return d.x; })
