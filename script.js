@@ -170,6 +170,7 @@ var run99 = false;
 
 $("#container-one-percent").scrollStory({
   disablePastLastItem: true,
+  triggerOffset: 100,
   itementerviewport: function(ev, item) {
     if(item.index === 1 && run99 === false) {
       // item.el.css('background-color', 'red');
@@ -190,7 +191,7 @@ $("#container-one-percent").on('itemfocus', function(ev, item){
       }
 
   } else {
-    item.el.css('background-color', 'orange')
+    // item.el.css('background-color', 'orange')
   }
 });
 
